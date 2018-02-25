@@ -25,6 +25,7 @@ body{
     height: 100px;
     background-origin: border-box;
     position: fixed;
+    z-index: 10;
 }
 
 #logo-box{
@@ -94,15 +95,133 @@ body{
   z-index: 2;
 }
 
-.view-product-img{
+.bold-line{
+  position: fixed;
+}
+.bold-first{z-index: -1; left: -200px;}
+.bold-second{z-index: 2; left: calc(100vw - 350px); top: 270px;}
 
-  position: relative;
+.fixed-parallax-symbol{
+  position: fixed;
+  width: 104px;
+  height: 77px;
+  z-index: 2;
+  left: calc(100vw - 180px);
+  top: 190px;
+}
+
+
+.fixed-parallax-circles{
+  position: fixed;
+  width: 210px;
+  height: 182px;
+  z-index: 2;
+  left: 23vw;
   top: 150px;
-  width: 80%;
+}
+
+.view-product-img{
+  position: relative;
+  top: 140px;
+  width: 82%;
   height: 100%;
   z-index: 1;
 }
 .view-product-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.view-product-container{
+  position: absolute;
+  top: 140px;
+  padding: 50px;
+  font-size: 25px;
+  font-family: "GothamBold";
+  line-height: normal;
+  color: #000;
+  z-index: 3;
+}
+.view-product-box{
+  position: relative;
+  border: 1px solid #000;
+  padding: 30px;
+  color: #fff;
+}
+.view-product-text{
+  padding: 0 20px;
+}
+.view-product-text span{
+  color: #000;
+  font-size: 14px;
+}
+.circle-lines{
+  position: absolute;
+  left: 100px;
+  width: 156px;
+  z-index: 1;
+  padding-top: 40px;
+}
+.skewcircle{
+  position: absolute;
+  width: 350px;
+  left: calc(100vw - 400px);
+  z-index: 1;
+}
+.line-seperator{
+  position: relative;
+  width: 100%;
+  top: 140px;
+  padding: 50px;
+  z-index: 1;
+  overflow: hidden;
+}
+.line-seperator img{
+  display: block;
+  position: relative;
+  width: 14px;
+  margin: 0 auto;
+}
+.side-blue-deco{
+  position: absolute;
+  width: 404px;
+  margin-top: 200px;
+  left: calc(100vw - 421px);
+}
+
+.about-us-container{
+  position: absolute;
+  /* top: 140px; */
+  margin-top: 140px;
+  padding: 50px;
+  font-size: 25px;
+  font-family: "GothamBold";
+  line-height: normal;
+  color: #000;
+  z-index: 3;
+}
+.about-us-box{
+  position: relative;
+  border: 1px solid #000;
+  padding: 30px;
+  color: #fff;
+}
+.about-us-text{
+  padding: 0 20px;
+}
+.about-us-text span{
+  color: #000;
+  font-size: 14px;
+}
+
+.about-us-img{
+  position: relative;
+  top: 140px;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+.about-us-img img{
   width: 100%;
   height: 100%;
 }
