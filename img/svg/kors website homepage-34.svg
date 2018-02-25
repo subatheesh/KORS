@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="468.865px" height="467.938px" viewBox="0 0 468.865 467.938" enable-background="new 0 0 468.865 467.938"
-	 xml:space="preserve">
+	 viewBox="0 0 221.6 118.6" style="enable-background:new 0 0 221.6 118.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#212121;}
+</style>
 <g>
 	<g>
-		<polygon fill="#212121" points="214.685,264.734 209.825,260.148 214.407,255.289 209.548,250.707 214.134,245.848 
-			223.853,255.016 		"/>
+		<polygon class="st0" points="99,74.2 94.2,69.6 98.7,64.8 93.9,60.2 98.5,55.3 108.2,64.5 		"/>
 	</g>
 	<g>
 		
-			<rect x="192.109" y="272.095" transform="matrix(0.7273 0.6863 -0.6863 0.7273 245.6599 -57.7127)" fill="#212121" width="6.682" height="16.327"/>
+			<rect x="71.6" y="86.4" transform="matrix(0.6863 -0.7273 0.7273 0.6863 -40.2486 86.1946)" class="st0" width="16.3" height="6.7"/>
 	</g>
 	<g>
-		<polygon fill="#212121" points="171.907,310.088 162.188,300.92 166.774,296.061 171.634,300.643 176.216,295.783 
-			181.075,300.369 		"/>
-	</g>
-	<g>
-		
-			<rect x="138.5" y="278.345" transform="matrix(0.7274 0.6862 -0.6862 0.7274 233.2587 -23.8602)" fill="#212121" width="16.327" height="6.681"/>
-	</g>
-	<g>
-		<polygon fill="#212121" points="126.554,267.311 116.835,258.143 126.003,248.424 130.862,253.01 126.28,257.869 131.14,262.451 
-					"/>
+		<polygon class="st0" points="56.2,119.6 46.5,110.4 51.1,105.6 56,110.1 60.5,105.3 65.4,109.9 		"/>
 	</g>
 	<g>
 		
-			<rect x="141.896" y="224.736" transform="matrix(0.7273 0.6863 -0.6863 0.7273 199.4604 -36.1654)" fill="#212121" width="6.682" height="16.327"/>
+			<rect x="27.6" y="83" transform="matrix(0.6862 -0.7274 0.7274 0.6862 -56.6027 51.1456)" class="st0" width="6.7" height="16.3"/>
 	</g>
 	<g>
-		<polygon fill="#212121" points="164.472,217.375 159.612,212.789 168.78,203.07 178.499,212.238 173.913,217.098 169.054,212.516 
-					"/>
+		<polygon class="st0" points="10.9,76.8 1.2,67.6 10.3,57.9 15.2,62.5 10.6,67.4 15.5,72 		"/>
 	</g>
 	<g>
 		
-			<rect x="185.859" y="228.132" transform="matrix(0.7274 0.6862 -0.6862 0.7274 211.7124 -70.0428)" fill="#212121" width="16.327" height="6.681"/>
+			<rect x="21.4" y="39.1" transform="matrix(0.6863 -0.7273 0.7273 0.6863 -21.5572 34.8156)" class="st0" width="16.3" height="6.7"/>
+	</g>
+	<g>
+		<polygon class="st0" points="48.8,26.9 43.9,22.3 53.1,12.6 62.8,21.7 58.2,26.6 53.4,22 		"/>
+	</g>
+	<g>
+		<rect x="75" y="32.8" transform="matrix(0.6862 -0.7274 0.7274 0.6862 -5.2189 69.8392)" class="st0" width="6.7" height="16.3"/>
 	</g>
 </g>
 <g>
-	<polygon fill="#212121" points="337.257,227.594 301.163,227.594 301.163,191.5 291.538,191.5 291.538,227.594 255.444,227.594 
-		255.444,237.219 291.538,237.219 291.538,273.312 301.163,273.312 301.163,237.219 337.257,237.219 	"/>
+	<polygon class="st0" points="221.6,37.1 185.5,37.1 185.5,1 175.9,1 175.9,37.1 139.8,37.1 139.8,46.7 175.9,46.7 175.9,82.8 
+		185.5,82.8 185.5,46.7 221.6,46.7 	"/>
 </g>
 </svg>

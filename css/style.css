@@ -19,6 +19,10 @@ body{
     font-family: GothamRegular;
     src: url("../font/GothamRnd-Book.otf");
 }
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../font/GothamCondensed-Bold.otf");
+}
 
 #header-container{
     width: 100vw;
@@ -168,10 +172,10 @@ body{
   left: calc(100vw - 400px);
   z-index: 1;
 }
+.line-seperator-first{top: 140px;}
 .line-seperator{
   position: relative;
   width: 100%;
-  top: 140px;
   padding: 50px;
   z-index: 1;
   overflow: hidden;
@@ -198,6 +202,7 @@ body{
   font-family: "GothamBold";
   line-height: normal;
   color: #000;
+  left: 100px;
   z-index: 3;
 }
 .about-us-box{
@@ -217,11 +222,178 @@ body{
 .about-us-img{
   position: relative;
   top: 140px;
-  width: 60%;
+  width: 68%;
+  left: -8%;
   height: 100%;
   z-index: 1;
 }
 .about-us-img img{
   width: 100%;
   height: 100%;
+}
+.circle-without-cross{
+  position: absolute;
+  width: 422px;
+  margin-top: -150px;
+  z-index: 2;
+  left: 55%;
+  filter: drop-shadow(0px 0px 20px #888);
+}
+.circle-cross{
+  position: absolute;
+  width: 66px;
+  margin-top: -150px;
+  z-index: 2;
+  left: calc(55% + 330px);
+}
+.side-pink-deco{
+  position: absolute;
+  width: 414px;
+  left: -1px;
+  z-index: 2;
+  margin-top: 70px;
+}
+.cosmo-silky-container{
+  position: relative;
+  width: 100%;
+  font-size: 130px;
+  font-family: "GothamBold";
+  line-height: normal;
+  margin-top: 60px;
+  overflow-x: hidden;
+  z-index: 2;
+}
+.cosmo-silky-top-text{
+  position: relative;
+  left: 13%;
+}
+
+.cosmo-silky-bottom-text{
+  position: relative;
+  left: 38%;
+}
+.hair-care-container{
+  position: relative;
+  width: 100%;
+}
+.hair-care-img-container{
+  position: relative;
+  left: 100px;
+  overflow: hidden;
+  height: 420px;
+  width:48%;
+}
+.hair-care-img{
+  position: relative;
+  height: 420px;
+  display: block;
+  left: -180px;
+}
+.hair-care-text{
+  position: absolute;
+  line-height: normal;
+  font-size: 170px;
+  left: 50%;
+  z-index: 1;
+  font-family: "GothamCondensedBold";
+  top: 100px;
+}
+.hair-care-arrows{
+  position: absolute;
+  width: 51px;
+  left: 35%;
+  top: 280px;
+  z-index: 1;
+}
+.hair-care-dots{
+  position: absolute;
+  left: 45%;
+  width: 210px;
+  top: 260px;
+}
+.skin-care-container{
+  margin-top: 150px;
+  position: relative;
+  width: 100%;
+}
+.skin-care-img-container{
+  position: relative;
+  left: calc(48% - 100px);
+  overflow: hidden;
+  height: 420px;
+  width:48%;
+}
+.skin-care-img{
+  position: relative;
+  height: 420px;
+  display: block;
+}
+.skin-care-text{
+  position: absolute;
+  line-height: normal;
+  font-size: 170px;
+  left: 10%;
+  z-index: 1;
+  font-family: "GothamCondensedBold";
+  top: 100px;
+}
+.skin-care-symbol{
+  position: absolute;
+  width: 222px;
+  left: 8%;
+  top: -25px;
+}
+.skin-care-circles{
+  position: absolute;
+  top:300px;
+}
+.skin-care-yellow-circle{
+  position: absolute;
+  width: 185px;
+  filter: drop-shadow(0px 0px 20px #888);
+  left: 32vw;
+}
+.skin-care-strip-circles{
+  position: absolute;
+  width: 185px;
+  top: 15px;
+  left: calc(32vw - 35px);
+}
+.gentlemen-container{
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+}
+.gentlemen-img-container{
+  position: relative;
+  left: 100px;
+  overflow: hidden;
+  height: 420px;
+  width:48%;
+}
+.gentlemen-img{
+  position: relative;
+  height: 420px;
+  display: block;
+}
+.gentlemen-text{
+  position: absolute;
+  line-height: normal;
+  font-size: 170px;
+  left: 50%;
+  z-index: 1;
+  font-family: "GothamCondensedBold";
+  top: 100px;
+}
+.gentlemen-circles{
+  position: absolute;
+  left: 54%;
+  width: 212px;
+  top: 280px;
+}
+.gentlemen-strips{
+  position: absolute;
+  left: calc(100vw - 338px);
+  width: 238px;
+  top: 0px;
 }
