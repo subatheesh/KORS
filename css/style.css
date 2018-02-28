@@ -574,6 +574,7 @@
 .follow-us-container{
   position: relative;
   padding: 50px 80px;
+  overflow-x: hidden;
 }
 .follow-left-deco{
   position: absolute;
