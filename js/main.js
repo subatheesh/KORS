@@ -15,4 +15,27 @@ $(document).ready(function(){
         $("#fixedParallaxSymbol").css({left: fixedparallaxsymbol - 1*scrollTop});
         $("#fixedParallaxCircles").css({left: fixedparallaxcircles - 1*scrollTop});
     });
+    var blogimgcontainerwidth = $("#BlogImgContainer").width();
+    $("#BlogImg1").width(blogimgcontainerwidth);
+    $("#BlogImg2").width(blogimgcontainerwidth);
+    $("#BlogImg3").width(blogimgcontainerwidth);
+    $("#BlogImg4").width(blogimgcontainerwidth);
+    var blogCount = 4;
+    var blogNo = 0;
+    $("#BlogArrowLeftImg").click(function() {
+      if(blogNo > 0){
+        blogNo--;
+        var blogWidth = -blogNo * blogimgcontainerwidth;
+        console.log(blogWidth);
+        $("#BlogsImages").animate({left: blogWidth}, 500);
+      }
+    });
+    $("#BlogArrowRightImg").click(function() {
+      if(blogNo < blogCount - 1){
+        blogNo++;
+        var blogWidth = -blogNo * blogimgcontainerwidth;
+        console.log(blogWidth);
+        $("#BlogsImages").animate({left: blogWidth}, 500);
+      }
+    });
 });

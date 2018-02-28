@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../../font/GothamHTF-Bold.otf");
+}
+@font-face {
+    font-family: GothamLight;
+    src: url("../../font/GothamRnd-Light.otf");
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url("../../font/GothamRnd-Book.otf");
+}
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../../font/GothamCondensed-Bold.otf");
+}
+@font-face {
+    font-family: GothamCondensedMedium;
+    src: url("../../font/GothamCondensed-Medium.otf");
+}
+@font-face {
+    font-family: GothamCondensedLightRegular;
+    src: url("../../font/GothamCondensed-Light-Regular.otf");
+}
+@font-face {
+    font-family: GothamCondensedLight;
+    src: url("../../font/GothamCondensed-Light.otf");
+}
+
+.product-container{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 960px;
+  overflow-x: hidden;
+}
+.product-top-deco{
+  position: absolute;
+  width: 917px;
+  left: 25%;
+}
+.product-left-deco{
+  position: absolute;
+  width: 217px;
+  left: 0px;
+}
+.product-left-line{
+  position: absolute;
+  width: 323px;
+  left: -50px;
+  top: 200px;
+}
+.product-right-line{
+  position: absolute;
+  width: 430px;
+  left: calc(100vw - 380px);
+  top: 50px;
+}
+.product-bottom-line{
+  position: absolute;
+  width: 17px;
+  left: 100px;
+  top: calc(960px - 315px);
+}
+.product-dots-deco{
+  position: absolute;
+  width: 222px;
+  top: 270px;
+  left: 50px;
+}
+.product-arrows-deco{
+  position: absolute;
+  width: 45px;
+  top: 220px;
+  left: 270px;
+}
+.product-plus-deco{
+  position: absolute;
+  width: 82px;
+  left: 160px;
+  top: 700px;
+}
+.product-back-symbol{
+  position: absolute;
+  width: 60px;
+  top: 80px;
+  left: 50px;
+}
+.product-details-container{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  top: 150px;
+}
+.product-image-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 63%;
+  padding-left: 12%;
+}
+.product-img-container{
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  float: right;
+}
+.product-image{
+  position: relative;
+  width: 400px;
+  float: right;
+}
+.product-image img{
+  width: 400px;
+  height: 660px;
+}
+.product-colors-container{
+  position: relative;
+  display: block;
+}
+.product-colors-title{
+  position: relative;
+  line-height: normal;
+  font-size: 17px;
+  text-align: left;
+  font-family: "GothamRegular";
+  font-weight: bold;
+  padding: 2px;
+}
+.product-colors{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+}
+.color-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  line-height: normal;
+  text-align: center;
+  padding: 5px 10px;
+}
+.color-num{
+  font-size: 24px;
+  font-family: "GothamBold";
+}
+.color-box{
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+.color{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+.natural-black{background: #000000;}
+.wine-red{background: #95171A;}
+.dark-brown{background: #4B2403;}
+.burgundy{background: #52090A;}
+.golden-blonde{background: #E29F2C;}
+.color-name{
+  font-size: 12px;
+  font-family: "GothamBold";
+}
+.colors-line-seperator{
+  border: 1px solid #000;
+  width: 2px;
+  height: 100px;
+}
+.product-properties{
+  position: relative;
+  width: 35%;
+  text-align: center;
+  padding: 80px 0;
+  padding-bottom: 40px;
+}
+.yellow-background{
+  width: 92%;
+  height: 42%;
+  position: absolute;
+  top: 270px;
+  background: yellow;
+}
+.product-code{
+  font-size: 16px;
+  position: relative;
+  font-family: "GothamRegular";
+  font-weight: bold;
+  padding: 10px;
+}
+.product-deco-lines{
+  position: relative;
+  text-align: left;
+}
+.product-name{
+  position: relative;
+  font-size: 32px;
+  font-family: "GothamBold";
+  padding: 10px;
+}
+.ingredients{
+  position: relative;
+  width: 64%;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 20px 20px;
+  padding-top: 50px;
+  margin: auto;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "GothamRegular";
+}
+.properties{
+  position: relative;
+  width: 64%;
+  border: 1px solid #000;
+  padding: 20px 20px;
+  padding-bottom: 100px;
+  margin: auto;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-family: "GothamRegular";
+}
+.properties p{
+  font-size: 16px;
+}
+ul li{
+  list-style-type: none;
+}
