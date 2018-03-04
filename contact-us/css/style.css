@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../../font/GothamHTF-Bold.otf");
+}
+@font-face {
+    font-family: GothamLight;
+    src: url("../../font/GothamRnd-Light.otf");
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url("../../font/GothamRnd-Book.otf");
+}
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../../font/GothamCondensed-Bold.otf");
+}
+@font-face {
+    font-family: GothamCondensedMedium;
+    src: url("../../font/GothamCondensed-Medium.otf");
+}
+@font-face {
+    font-family: GothamCondensedLightRegular;
+    src: url("../../font/GothamCondensed-Light-Regular.otf");
+}
+@font-face {
+    font-family: GothamCondensedLight;
+    src: url("../font/GothamCondensed-Light.otf");
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+.contact-us-container{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.contact-us-large-deco{
+  position: absolute;
+  width: 100%;
+  padding-left: 30%;
+}
+.contact-us-deco-1{
+  position: absolute;
+  left: calc(100vw - 270px);
+  top: 1240px;
+  width: 260px;
+}
+.contact-us-deco-2{
+  position: absolute;
+  left: 20%;
+  top: 390px;
+  width: 220px;
+}
+.contact-us-deco-3{
+  position: absolute;
+  left: 50%;
+  top: 370px;
+  width: 66px;
+}
+.contact-us-deco-4{
+  position: absolute;
+  left: 43%;
+  top: 230px;
+  width: 87px;
+}
+.contact-us-inner-deco-1{
+  position: absolute;
+  width: 330px;
+  z-index: 1;
+  top: 500px;
+  left: -80px;
+}
+.contact-form-design-container{
+  position: relative;
+  width: 70%;
+  padding: 0 8%;
+  margin: auto;
+  margin-top: 600px;
+  background: url("../../img/contact-us/kors website -78.png");
+  height: 1200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contact-form-container{
+  position: relative;
+
+  padding: 150px 50px;
+}
+input, textarea{
+  padding: 5px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 0px solid #111;
+  margin: 6px;
+  background: #ca353c;
+  width: 300px;
+  border-radius: 10px / 5px;
+  color: #fff;
+  font-family: "GothamLight";
+}
+textarea{border-radius: 8px / 20px;}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input[type="submit"] {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-size: 30px;
+    font-family: "GothamBold";
+}

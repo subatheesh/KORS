@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    var colorContainerTop = $("#ProductDetailsContainer").position().top + $("#ProductDetailsContainer").height();
+    $("#ProductColorContainer").css({top: colorContainerTop});
+    var productColorHeight = $("#ProductColorContainer").height();
+    $("#ProductContainer").height(productColorHeight+colorContainerTop+40);
     $("#NaturalBlack").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Natural Black.png');
           $("#ProductCode").html("KC201");

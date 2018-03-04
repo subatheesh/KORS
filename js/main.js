@@ -1,11 +1,12 @@
 $(document).ready(function(){
     $(document).scrollTop(0);
-    var foregroundLeft = $("#foreGroundText").position().left;
-    var backgroundLeft = $("#backGroundText").position().left;
-    var boldlinefirst = $("#boldLineFirst").position().left;
-    var boldlinesecond = $("#boldLineSecond").position().left;
-    var fixedparallaxsymbol = $("#fixedParallaxSymbol").position().left;
-    var fixedparallaxcircles = $("#fixedParallaxCircles").position().left;
+    var foregroundLeft = $("#foreGroundText").offset().left;
+    var backgroundLeft = $("#backGroundText").offset().left;
+    var boldlinefirst = $("#boldLineFirst").offset().left;
+    var boldlinesecond = $("#boldLineSecond").offset().left;
+    var fixedparallaxsymbol = $("#fixedParallaxSymbol").offset().left;
+    var fixedparallaxcircles = $("#fixedParallaxCircles").offset().left;
+    console.log(foregroundLeft);
     $(window).scroll(function(){
         var scrollTop = $(document).scrollTop();
         $("#foreGroundText").css({left: foregroundLeft - 2*scrollTop});
@@ -14,6 +15,12 @@ $(document).ready(function(){
         $("#boldLineSecond").css({left: boldlinesecond - 2*scrollTop});
         $("#fixedParallaxSymbol").css({left: fixedparallaxsymbol - 1*scrollTop});
         $("#fixedParallaxCircles").css({left: fixedparallaxcircles - 1*scrollTop});
+
+        if(scrollTop > 20){
+            $("#header-container").addClass("header-shadow");
+        }else{
+            $("#header-container").removeClass("header-shadow");
+        }
     });
     var blogimgcontainerwidth = $("#BlogImgContainer").width();
     $("#BlogImg1").width(blogimgcontainerwidth);
