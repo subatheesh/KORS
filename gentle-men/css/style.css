@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../../font/GothamHTF-Bold.otf");
+}
+@font-face {
+    font-family: GothamLight;
+    src: url("../../font/GothamRnd-Light.otf");
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url("../../font/GothamRnd-Book.otf");
+}
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../../font/GothamCondensed-Bold.otf");
+}
+@font-face {
+    font-family: GothamCondensedMedium;
+    src: url("../../font/GothamCondensed-Medium.otf");
+}
+@font-face {
+    font-family: GothamCondensedLightRegular;
+    src: url("../../font/GothamCondensed-Light-Regular.otf");
+}
+@font-face {
+    font-family: GothamCondensedLight;
+    src: url("../../font/GothamCondensed-Light.otf");
+}
+img{ width: 100%;}
+
+.gentle-men-container{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.gentle-men-header{
+  position: relative;
+  font-family: "GothamBold";
+  font-size: 80px;
+  padding-top: 30px;
+  width: 100%;
+  left: 15%;
+}
+.gentlemen-container{
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 500px;
+  background: #e3743e;
+}
+.items-container{
+  position: relative;
+  width: 73%;
+  top: -40px;
+  margin-left: 8%;
+  border: 1px solid #000;
+}
+.background-container{
+  position: absolute;
+  background: #fff;
+  opacity: 0.9;
+  top: 1px;
+  width: 93%;
+  margin: 0 3%;
+  height: calc(100% - 200px);
+}
+.dual-item-container{
+  position: relative;
+  display: flex;
+  width: 75%;
+  margin: 100px auto;
+  margin-bottom: 600px;
+}
+.first-item-container, .second-item-container{
+  position: relative;
+  width: 50%;
+}
+.item-header{
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "GothamBold";
+}
+.item-first{text-align: left;}
+.item-second{text-align: right;}
+.item-container-first, .item-container-second{
+  position: relative;
+  width: 100%;
+  /* height: 420px; */
+  border: 1px solid #000;
+  z-index: 1;
+}
+.item-container-second{  border-left: 0px solid #000;}
+.first-item-deco{
+  position: absolute;
+  width: 20%;
+  left: 85%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.second-item-deco{
+  position: absolute;
+  width: 20%;
+  display: none;
+  left: 95%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.first-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.second-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 25%;
+  margin-bottom: 30px;
+}
+.product img{
+  padding: 20px 0;
+}
+.product-code{
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  font-family: "GothamBold";
+  text-align: center;
+  line-height: normal;
+}
+.gentlemen-image{
+  position: absolute;
+  width: 100%;
+}
+.gentlemen-deco1{
+  position: absolute;
+  width: 95%;
+  left: -7%;
+}
+.gentlemen-deco2{
+  position: absolute;
+  width: 45%;
+  left: 62%;
+}
+.gentle-men-back{
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 50px;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .gentle-men-back{ width: 18px; top: 30px; left: 8%;}
+    .gentlemen-container{margin-top: 10px;}
+    .items-container{top: -10px;}
+    .gentle-men-header{ font-size: 30px; padding-top: 20px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%; margin-bottom: 150px;}
+    .background-container{height: calc(100% - 100px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 12px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 10px;}
+    .second-item-container .product{margin-left: 15%;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 650px) {
+    .gentle-men-back{ width: 24px; top: 50px; left: 5%;}
+    .gentle-men-header{ font-size: 40px; padding-top: 30px;}
+    .gentlemen-container{margin-top: 15px;}
+    .items-container{top: -15px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%; margin-bottom: 150px;}
+    .background-container{height: calc(100% - 100px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 20px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 14px;}
+    .second-item-container .product{margin-left: 15%;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 540px) {
+  /* .gentle-men-deco4{left: 12%; top: 800px;}
+  .gentle-men-deco5{top: 900px;}
+  .gentle-men-deco6{top: 920px; left: -10%;} */
+}
+
+@media screen and (min-width: 541px) and (max-width: 650px) {
+  .gentlemen-container{margin-top: 15px;}
+  /* .gentle-men-deco4{left: 12%; top: 880px;}
+  .gentle-men-deco5{top: 980px;}
+  .gentle-men-deco6{top: 1050px; left: -10%;} */
+}
+
+@media screen and (min-width: 651px) and (max-width: 960px) {
+    .gentle-men-back{ width: 32px; top: 50px; left: 40px;}
+    .gentle-men-header{ font-size: 60px; padding-top: 30px;}
+    .gentlemen-container{margin-top: 25px;}
+    .items-container{top: -25px;}
+    .dual-item-container{margin: 50px auto; margin-bottom: 450px;}
+    .background-container{height: calc(100% - 200px)}
+    .item-header{font-size: 20px;}
+    .product-code{font-size: 15px;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 760px) {
+  .item-header{font-size: 17px;}
+  .product-code{font-size: 13px;}
+}

@@ -39,36 +39,36 @@ img{width: 100%;}
 }
 .product-top-deco{
   position: absolute;
-  width: 917px;
-  left: 25%;
+  width: 100%;
+  padding-left: 25%;
 }
 .product-left-deco{
   position: absolute;
-  width: 217px;
+  width: 18%;
   left: 0px;
   top: 200px;
 }
 .product-left-line{
   position: absolute;
-  width: 225px;
+  width: 18%;
   left: -50px;
   top: 200px;
 }
 .product-right-line{
   position: absolute;
-  width: 430px;
-  left: calc(100vw - 380px);
+  width: 32%;
+  left: calc(100vw - 30%);
   top: 50px;
 }
 .product-bottom-line{
   position: absolute;
   width: 17px;
   left: 80px;
-  top: calc(960px - 315px);
+  top: calc(100% - 315px);
 }
 .product-dots-deco{
   position: absolute;
-  width: 222px;
+  width: 18%;
   top: 270px;
   left: 50px;
 }
@@ -76,12 +76,12 @@ img{width: 100%;}
   position: absolute;
   width: 45px;
   top: 220px;
-  left: 320px;
+  left: 25%;
 }
 .product-plus-deco{
   position: absolute;
   width: 82px;
-  left: 160px;
+  left: 13%;
   top: 700px;
 }
 .product-back-symbol{
@@ -91,27 +91,29 @@ img{width: 100%;}
   left: 50px;
 }
 .product-details-container{
-  position: absolute;
-  width: 55%;
+  position: relative;
+  width: 65%;
   z-index: 1;
   display: flex;
-  top: 200px;
-  left: 38%;
+  margin-top: 200px;
+  left: 30%;
+  max-width: 1000px;
 }
 .product-img-container{
   position: relative;
   width: 50%;
+  display: flex;
   padding: 0 20px;
-  float: right;
 }
 .product-image{
   position: relative;
   width: 100%;
-  float: right;
 }
 .product-image img{
   width: 100%;
-  /* height: 660px; */
+  max-width: 370px;
+  margin: auto;
+  max-height: 660px;
 }
 .product-properties{
   position: relative;
@@ -176,16 +178,59 @@ img{width: 100%;}
   box-sizing: border-box;
 }
 .properties p{
-  /* padding-top: 10px; */
   font-size: 14px;
 }
 ul li{
   list-style-type: none;
 }
+.product-mobile-colors-container{
+  position: relative;
+  display: none;
+  width: 33%;
+}
+.product-mobile-colors-title{
+  position: relative;
+  line-height: normal;
+  font-size: 12px;
+  text-align: left;
+  font-family: "GothamRegular";
+  font-weight: bold;
+  padding: 2px;
+}
+.product-mobile-colors-title-line{
+  position: relative;
+  width: 70%;
+  border: 1px solid #000;
+  height: 2px;
+  margin-bottom: 5px;
+}
+.product-mobile-colors{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-color-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  text-align: center;
+  padding: 10px;
+}
+.mobile-color-box{
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+.mobile-color-name{
+  font-size: 8px;
+  font-family: "GothamBold";
+}
 .product-colors-container{
-  position: absolute;
+  position: relative;
   display: block;
-  left: 36%;
+  left: 26%;
+  margin-bottom: 50px;
 }
 .product-colors-title{
   position: relative;
@@ -241,4 +286,69 @@ ul li{
   border: 1px solid #000;
   width: 2px;
   height: 100px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px){
+    .product-left-deco{width: 60%; top: 80px;}
+    .product-dots-deco{min-width: 200px; left: -40%; top: 100px;}
+    .product-arrows-deco{width: 24px; left: 2%; top:450px;}
+    .product-back-symbol{width: 32px; top: 20px; left: 20px;}
+    .product-plus-deco{display: none;}
+    .product-left-line{min-width: 80px; top: 50px;}
+    .product-right-line{top: 20px; display: none;}
+    .product-bottom-line{display: none;}
+    .product-details-container{ display: block; width: 92%; margin-top: 50px; left: 5%;}
+    .product-img-container{ position: relative; width: 100%; padding: 0 5px;}
+    .product-mobile-colors-container{ display: block;}
+    .product-properties{ width: 100%; padding-bottom: 40px;}
+    .product-colors-container{display: none;}
+}
+@media screen and (min-width: 421px) and (max-width: 760px){
+    .product-left-deco{width: 40%; top: 100px;}
+    .product-dots-deco{min-width: 250px; left: -20%; top: 200px;}
+    .product-arrows-deco{width: 32px; left: 8%; top:550px;}
+    .product-back-symbol{width: 50px; top: 50px; left: 30px;}
+    .product-plus-deco{display: none;}
+    .product-left-line{min-width: 150px; top: 100px;}
+    .product-right-line{top: 20px; display: none;}
+    .product-bottom-line{display: none;}
+    .product-details-container{ display: block; width: 80%; margin-top: 100px; left: 15%;}
+    .product-img-container{ position: relative; width: 100%; padding: 0 5px;}
+    .product-mobile-colors-container{ display: block;}
+    .product-mobile-colors-title-line{width: 80%;}
+    .product-properties{ width: 100%; padding-bottom: 40px;}
+    .product-colors-container{display: none;}
+}
+@media screen and (min-width: 421px) and (max-width: 530px){
+    .product-mobile-colors-title{font-size: 17px; padding: 5px;}
+    .mobile-color-name{ font-size: 8px;}
+    .mobile-color-container{ padding: 10px;}
+    .mobile-color-box{ padding: 7px;}
+}
+
+@media screen and (min-width: 531px) and (max-width: 650px){
+    .product-mobile-colors-title{font-size: 17px; padding: 8px;}
+    .mobile-color-name{font-size: 10px;}
+    .mobile-color-container{ padding: 15px;}
+    .mobile-color-box{padding: 10px;}
+}
+@media screen and (min-width: 651px) and (max-width: 760px){
+    .product-mobile-colors-title{font-size: 18px; padding: 10px;}
+    .mobile-color-name{font-size: 12px;}
+    .product-image img{ max-height: 720px; max-width: 420px;}
+    .mobile-color-container{ padding: 20px;}
+    .mobile-color-box{padding: 15px;}
+}
+@media screen and (min-width: 761px) and (max-width: 1060px){
+    .product-arrows-deco{width: 32px; left: 30px; top:500px;}
+    .product-plus-deco{width: 50px; top: 600px;}
+    .product-bottom-line{left: 70px; width: 14px; top: calc(100% - 250px);}
+    .product-details-container{ width: 80%; margin-top: 150px; left: 15%;}
+    .product-img-container{ position: relative; width: 100%; padding: 0 5px;}
+    .product-mobile-colors-container{ display: none;}
+    .product-properties{ width: 100%; padding-bottom: 40px;}
+    .product-colors-container{display: block; left: 16%; padding-top: 20px;}
+}
+@media screen and (min-width: 1361px){
+    .product-colors-container{ left: 40%; padding-top: 20px;}
 }

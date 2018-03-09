@@ -1,34 +1,59 @@
 $(document).ready(function(){
-
-    var colorContainerTop = $("#ProductDetailsContainer").position().top + $("#ProductDetailsContainer").height();
-    $("#ProductColorContainer").css({top: colorContainerTop});
-    var productColorHeight = $("#ProductColorContainer").height();
-    $("#ProductContainer").height(productColorHeight+colorContainerTop+40);
     $("#NaturalBlack").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Natural Black.png');
           $("#ProductCode").html("KC201");
-          $("#ProductColor").html("Natural Black 5");
+          $("#ProductColor").html("Natural Black 1");
+    });
+
+    $("#MobileNaturalBlack").click(function(){
+          $("#ProductImage").attr('src','../img/products/boxs/Natural Black.png');
+          $("#ProductCode").html("KC201");
+          $("#ProductColor").html("Natural Black 1");
     });
 
     $("#WineRed").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Red.png');
           $("#ProductCode").html("KC201");
-          $("#ProductColor").html("Wine Red 5");
+          $("#ProductColor").html("Wine Red 2");
+    });
+
+    $("#MobileWineRed").click(function(){
+          $("#ProductImage").attr('src','../img/products/boxs/Red.png');
+          $("#ProductCode").html("KC201");
+          $("#ProductColor").html("Wine Red 2");
     });
 
     $("#DarkBrown").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Dark Brown.png');
           $("#ProductCode").html("KC201");
-          $("#ProductColor").html("Dark Brown 5");
+          $("#ProductColor").html("Dark Brown 3");
+    });
+
+    $("#MobileDarkBrown").click(function(){
+          $("#ProductImage").attr('src','../img/products/boxs/Dark Brown.png');
+          $("#ProductCode").html("KC201");
+          $("#ProductColor").html("Dark Brown 3");
     });
 
     $("#Burgundy").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Burgundy.png');
           $("#ProductCode").html("KC201");
-          $("#ProductColor").html("Burgundy 5");
+          $("#ProductColor").html("Burgundy 4");
+    });
+
+    $("#MobileBurgundy").click(function(){
+          $("#ProductImage").attr('src','../img/products/boxs/Burgundy.png');
+          $("#ProductCode").html("KC201");
+          $("#ProductColor").html("Burgundy 4");
     });
 
     $("#GoldenBlonde").click(function(){
+          $("#ProductImage").attr('src','../img/products/boxs/Golden.png');
+          $("#ProductCode").html("KC201");
+          $("#ProductColor").html("Golden Blonde 5");
+    });
+
+    $("#MobileGoldenBlonde").click(function(){
           $("#ProductImage").attr('src','../img/products/boxs/Golden.png');
           $("#ProductCode").html("KC201");
           $("#ProductColor").html("Golden Blonde 5");

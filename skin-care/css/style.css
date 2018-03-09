@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../../font/GothamHTF-Bold.otf");
+}
+@font-face {
+    font-family: GothamLight;
+    src: url("../../font/GothamRnd-Light.otf");
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url("../../font/GothamRnd-Book.otf");
+}
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../../font/GothamCondensed-Bold.otf");
+}
+@font-face {
+    font-family: GothamCondensedMedium;
+    src: url("../../font/GothamCondensed-Medium.otf");
+}
+@font-face {
+    font-family: GothamCondensedLightRegular;
+    src: url("../../font/GothamCondensed-Light-Regular.otf");
+}
+@font-face {
+    font-family: GothamCondensedLight;
+    src: url("../../font/GothamCondensed-Light.otf");
+}
+img{ width: 100%;}
+
+.skin-care-container{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.skin-care-header{
+  position: relative;
+  font-family: "GothamBold";
+  font-size: 80px;
+  padding-top: 30px;
+  width: 100%;
+  left: 15%;
+}
+.skin-container{
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  /* padding-bottom: 1200px; */
+  background: #e3743e;
+}
+.items-container{
+  position: relative;
+  width: 73%;
+  top: -40px;
+  margin-left: 8%;
+  border: 1px solid #000;
+}
+.background-container{
+  position: absolute;
+  background: #fff;
+  opacity: 0.9;
+  top: 1px;
+  width: 93%;
+  margin: 0 3%;
+  height: calc(100% - 200px);
+}
+.dual-item-container{
+  position: relative;
+  display: flex;
+  width: 75%;
+  margin: 100px auto;
+  margin-bottom: 550px;
+}
+.first-item-container, .second-item-container{
+  position: relative;
+  width: 50%;
+}
+.item-header{
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "GothamBold";
+}
+.item-first{text-align: left;}
+.item-second{text-align: right;}
+.item-container-first, .item-container-second{
+  position: relative;
+  width: 100%;
+  /* height: 420px; */
+  border: 1px solid #000;
+  z-index: 1;
+}
+.item-container-second{  border-left: 0px solid #000;}
+.first-item-deco{
+  position: absolute;
+  width: 20%;
+  left: 85%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.second-item-deco{
+  position: absolute;
+  width: 20%;
+  display: none;
+  left: 95%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.first-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.second-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 25%;
+  margin-bottom: 30px;
+}
+.product img{
+  padding: 20px 0;
+}
+.product-code{
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  font-family: "GothamBold";
+  text-align: center;
+  line-height: normal;
+}
+.skin-care-deco1{
+  position: absolute;
+  top: -40px;
+  left: -6%;
+  width: 60%;
+}
+.skin-care-deco2{
+  position: absolute;
+  width: 75%;
+  top: 30px;
+  left: calc(30%);
+}
+.skin-care-deco3{
+  position: absolute;
+  width: 22%;
+  left: 80%;
+}
+.skin-care-deco4{
+  position: absolute;
+  width: 9%;
+  left: 20%;
+  top: 710px;
+  z-index: 1;
+}
+.skin-care-deco5{
+  position: absolute;
+  width: 53%;
+  left: 50%;
+  top: 900px;
+  z-index: 1;
+}
+.skin-care-deco6{
+  position: absolute;
+  width: 25%;
+  left: -7%;
+  top: 1033px;
+  z-index: 1;
+}
+.skin-care-img{
+  position: relative;
+  width: 65%;
+  left: -1%;
+  margin-top: 200px;
+}
+.skin-care-text{
+  position: absolute;
+  z-index: 1;
+  font-size: 220px;
+  font-family: "GothamBold";
+  line-height: normal;
+}
+.text-s{left: 76%; top: 4%;}
+.text-k{left: 70%; top: 22%;}
+.text-i{left: 80%; top: 38%;}
+.text-n{left: 52%; top: 50%;}
+.skin-care-back{
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 50px;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .skin-care-back{ width: 18px; top: 30px; left: 8%;}
+    .skin-container{margin-top: 10px;}
+    .items-container{top: -10px;}
+    .skin-care-header{ font-size: 30px; padding-top: 20px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%; margin-bottom: 150px;}
+    .background-container{height: calc(100% - 100px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 12px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 10px;}
+    .second-item-container .product{margin-left: 15%;}
+    .skin-care-deco4{left: 9%; top: 650px;}
+    .skin-care-deco5{top: 750px;}
+    .skin-care-deco6{top: 780px; left: -10%;}
+    .skin-care-img{margin-top: 100px;}
+    .skin-care-text{font-size: 100px;}
+    .text-k{top: 25%;}
+    .text-i{top: 46%;}
+    .text-n{top: 68%;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 650px) {
+    .skin-care-back{ width: 24px; top: 50px; left: 5%;}
+    .skin-care-header{ font-size: 40px; padding-top: 30px;}
+    .skin-container{margin-top: 15px;}
+    .items-container{top: -15px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%; margin-bottom: 150px;}
+    .background-container{height: calc(100% - 100px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 20px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 14px;}
+    .second-item-container .product{margin-left: 15%;}
+    .skin-care-img{margin-top: 150px;}
+    .skin-care-text{font-size: 140px;}
+    .text-k{top: 25%;}
+    .text-i{top: 46%;}
+    .text-n{top: 68%;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 540px) {
+  .skin-care-deco4{left: 12%; top: 800px;}
+  .skin-care-deco5{top: 900px;}
+  .skin-care-deco6{top: 920px; left: -10%;}
+}
+
+@media screen and (min-width: 541px) and (max-width: 650px) {
+  .skin-container{margin-top: 15px;}
+  .skin-care-deco4{left: 12%; top: 880px;}
+  .skin-care-deco5{top: 980px;}
+  .skin-care-deco6{top: 1050px; left: -10%;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 960px) {
+    .skin-care-back{ width: 32px; top: 50px; left: 40px;}
+    .skin-care-header{ font-size: 60px; padding-top: 30px;}
+    .skin-container{margin-top: 25px;}
+    .items-container{top: -25px;}
+    .dual-item-container{margin: 50px auto; margin-bottom: 450px;}
+    .background-container{height: calc(100% - 200px)}
+    .item-header{font-size: 20px;}
+    .product-code{font-size: 15px;}
+    .skin-care-deco4{top: 480px;}
+    .skin-care-deco5{top: 650px;}
+    .skin-care-deco6{top: 800px;}
+    .skin-care-img{margin-top: 180px;}
+    .skin-care-text{font-size: 170px;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 760px) {
+  .item-header{font-size: 17px;}
+  .product-code{font-size: 13px;}
+}
