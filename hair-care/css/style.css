@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../../font/GothamHTF-Bold.otf");
+}
+@font-face {
+    font-family: GothamLight;
+    src: url("../../font/GothamRnd-Light.otf");
+}
+@font-face {
+    font-family: GothamRegular;
+    src: url("../../font/GothamRnd-Book.otf");
+}
+@font-face {
+    font-family: GothamCondensedBold;
+    src: url("../../font/GothamCondensed-Bold.otf");
+}
+@font-face {
+    font-family: GothamCondensedMedium;
+    src: url("../../font/GothamCondensed-Medium.otf");
+}
+@font-face {
+    font-family: GothamCondensedLightRegular;
+    src: url("../../font/GothamCondensed-Light-Regular.otf");
+}
+@font-face {
+    font-family: GothamCondensedLight;
+    src: url("../../font/GothamCondensed-Light.otf");
+}
+img{ width: 100%;}
+
+.hair-care-container{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hair-care-header{
+  position: relative;
+  font-family: "GothamBold";
+  font-size: 80px;
+  padding-top: 30px;
+  width: 100%;
+  left: 15%;
+}
+.hair-container{
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  background: #eb8d79;
+}
+.items-container{
+  position: relative;
+  width: 73%;
+  top: -40px;
+  margin-left: 8%;
+  border: 1px solid #000;
+  padding-bottom: 800px;
+}
+.background-container{
+  position: absolute;
+  background: #fff;
+  opacity: 0.9;
+  top: 1px;
+  width: 93%;
+  margin: 0 3%;
+  height: calc(100% - 400px);
+}
+.dual-item-container{
+  position: relative;
+  display: flex;
+  width: 75%;
+  margin: 80px auto;
+
+}
+.first-item-container, .second-item-container{
+  position: relative;
+  width: 50%;
+}
+.item-header{
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "GothamBold";
+}
+.product-name{display: none;}
+.hair-spa{display: inline;}
+.hair-blonder{display: inline;}
+.item-first{text-align: left;}
+.item-second{text-align: right;}
+.item-container-first, .item-container-second{
+  position: relative;
+  width: 100%;
+  /* height: 420px; */
+  border: 1px solid #000;
+  z-index: 1;
+}
+.item-container-second{  border-left: 0px solid #000;}
+.first-item-deco{
+  position: absolute;
+  width: 20%;
+  left: 85%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.second-item-deco{
+  position: absolute;
+  width: 20%;
+  display: none;
+  left: 95%;
+  height: 80%;
+  top: 5%;
+  opacity: 0.7;
+  background-color: #f7ec13;
+}
+.first-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.second-item-container .product{
+  position: relative;
+  width: 60%;
+  margin-left: 25%;
+  margin-bottom: 30px;
+}
+.product img{
+  padding: 20px 0;
+}
+.product-code{
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  font-family: "GothamBold";
+  text-align: center;
+  line-height: normal;
+}
+.hair-care-img{
+  position: relative;
+  width: 105%;
+  left: -2%;
+  margin-top: 1000px;
+}
+.hair-care-text{
+  position: absolute;
+  z-index: 1;
+  font-size: 220px;
+  font-family: "GothamBold";
+  line-height: normal;
+}
+.text-h{ top: 2%; left: 75%;}
+.text-a1{ top: 12%; left: 85%;}
+.text-i{ top: 24%; left: 78%;}
+.text-r1{ top: 36%; left: 84%;}
+.text-c{top: 51%; left: 75%;}
+.text-a2{top: 60%; left: 85%;}
+.text-r2{top: 69%; left: 72%;}
+.text-e{top: 66%; left: 42%;}
+.hair-care-deco1{
+  position: absolute;
+  width: 84%;
+  left:-5%;
+}
+.hair-care-deco2{
+  position: absolute;
+  width: 38%;
+  top: 5%;
+  left: 72%;
+}
+.hair-care-deco3{
+  position: absolute;
+  width: 48%;
+  top: 25%;
+  left: -6%;
+}
+.hair-care-deco4{
+  position: absolute;
+  width: 70%;
+  top: 28%;
+  left: 34%;
+}
+.hair-care-deco5{
+  position: absolute;
+  width: 8%;
+  top: 17%;
+  left: 85%;
+}
+.hair-care-deco6{
+  position: absolute;
+  width: 40%;
+  top: 20%;
+  left: 88%;
+}
+.hair-care-deco7{
+  position: absolute;
+  width: 40%;
+  top: 46%;
+  left: -5%;
+}
+.hair-care-deco8{
+  position: absolute;
+  width: 27%;
+  top: 43%;
+  left: 74%;
+}
+.hair-care-deco9{
+  position: absolute;
+  width: 8%;
+  top: 63%;
+  left: 56%;
+}
+.hair-care-deco10{
+  position: absolute;
+  width: 40%;
+  top:  68%;
+  left: 82%;
+}
+.hair-care-deco11{
+  position: absolute;
+  width: 55%;
+  top:  69%;
+  left: -6%;
+}
+.hair-care-deco11 img{ filter: drop-shadow(0px 0px 40px #777);}
+.hair-care-deco12{
+  position: absolute;
+  width: 26%;
+  top:  71%;
+  left: 28%;
+}
+
+.hair-care-back{
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 50px;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .hair-care-back{ width: 18px; top: 30px; left: 8%;}
+    .hair-container{margin-top: 10px;}
+    .items-container{top: -10px; padding-bottom: 70px;}
+    .hair-care-header{ font-size: 30px; padding-top: 20px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%;}
+    .background-container{height: calc(100% - 60px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 12px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 10px;}
+    .second-item-container .product{margin-left: 15%;}
+    .hair-care-img{margin-top: 250px;}
+    .hair-care-text{font-size: 80px;}
+    .hair-care-deco7{top: 55%;}
+    .hair-care-deco9{top: 84%;}
+    .hair-care-deco10{top: 86%;}
+    .hair-care-deco11{top: 86%;}
+    .hair-care-deco12{top: 87%;}
+    .text-c{top:60%;}
+    .text-a2{top:72%;}
+    .text-r2{top:87%;}
+    .text-e{top: 85%;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 650px) {
+    .hair-care-back{ width: 24px; top: 50px; left: 5%;}
+    .hair-care-header{ font-size: 40px; padding-top: 30px;}
+    .hair-container{margin-top: 15px;}
+    .items-container{top: -15px; padding-bottom: 100px;}
+    .dual-item-container{display: block; margin: 20px; width: 70%;}
+    .background-container{height: calc(100% - 80px)}
+    .first-item-container,.second-item-container{width: 100%; left: 5%;}
+    .item-header{font-size: 20px; left: -20px; padding: 5px;}
+    .item-second{text-align: left;}
+    .item-container-second{  border-left: 1px solid #000;}
+    .second-item-deco{display: block;}
+    .product-code{font-size: 14px;}
+    .second-item-container .product{margin-left: 15%;}
+    .hair-care-img{margin-top: 400px;}
+    .hair-care-text{font-size: 120px;}
+    .hair-care-deco7{top: 55%;}
+    .hair-care-deco9{top: 82%;}
+    .hair-care-deco10{top: 84%;}
+    .hair-care-deco11{top: 84%;}
+    .hair-care-deco12{top: 85%;}
+    .text-c{top:60%;}
+    .text-a2{top:72%;}
+    .text-r2{top:85%;}
+    .text-e{top: 83%;}
+}
+
+@media screen and (min-width: 541px) and (max-width: 650px) {
+  .hair-container{margin-top: 15px;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 960px) {
+    .hair-care-back{ width: 32px; top: 50px; left: 40px;}
+    .hair-care-header{ font-size: 60px; padding-top: 30px;}
+    .skin-container{margin-top: 25px;}
+    .items-container{top: -25px; padding-bottom: 250px;}
+    .dual-item-container{margin: 50px auto;}
+    .background-container{height: calc(100% - 200px)}
+    .item-header{font-size: 20px;}
+    .product-code{font-size: 15px;}
+    .hair-care-img{margin-top: 550px;}
+    .hair-care-text{font-size: 170px;}
+    .hair-care-deco7{top: 48%;}
+    .hair-care-deco9{top: 64%;}
+    .hair-care-deco10{top: 70%;}
+    .hair-care-deco11{top: 68%;}
+    .hair-care-deco12{top: 70%;}
+    .text-h{top:2%;}
+    .text-a1{top:12%;}
+    .text-i{top:22%;}
+    .text-r1{top:32%;}
+    .text-c{top:50%;}
+    .text-a2{top:59%;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 782px) {
+  .item-header{font-size: 17px;}
+  .product-code{font-size: 13px;}
+}
+@media screen and (min-width: 651px) and (max-width: 665px) {
+  .hair-color-cream{display: inline;}
+}
+@media screen and (min-width: 961px) and (max-width: 1172px) {
+  .hair-color-cream{display: inline;}
+}
+@media screen and (min-width: 1543px){
+  .hair-spa{display: none;}
+}
+@media screen and (min-width: 1458px){
+  .hair-blonder{display: none;}
+}
