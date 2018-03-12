@@ -6,7 +6,6 @@ $(document).ready(function(){
     var boldlinesecond = $("#boldLineSecond").offset().left;
     var fixedparallaxsymbol = $("#fixedParallaxSymbol").offset().left;
     var fixedparallaxcircles = $("#fixedParallaxCircles").offset().left;
-    console.log(foregroundLeft);
     $(window).scroll(function(){
         var scrollTop = $(document).scrollTop();
         $("#foreGroundText").css({left: foregroundLeft - 2*scrollTop});
@@ -16,7 +15,7 @@ $(document).ready(function(){
         $("#fixedParallaxSymbol").css({left: fixedparallaxsymbol - 1*scrollTop});
         $("#fixedParallaxCircles").css({left: fixedparallaxcircles - 1*scrollTop});
 
-        if(scrollTop > 20){
+        if(scrollTop > 10){
             $("#header-container").addClass("header-shadow");
         }else{
             $("#header-container").removeClass("header-shadow");
@@ -44,5 +43,21 @@ $(document).ready(function(){
         console.log(blogWidth);
         $("#BlogsImages").animate({left: blogWidth}, 500);
       }
+    });
+    var navTab = false;
+    $("#Logo").click(function() {
+        if($(window).width() <= 650){
+            if(navTab){
+              navTab = false;
+              $("#nav-header").hide();
+            }else{
+              navTab = true;
+              $("#nav-header").show();
+            }
+        }
+    });
+    $(".close").click(function() {
+          $("#nav-header").hide();
+          navTab = false;
     });
 });

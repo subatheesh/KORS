@@ -47,9 +47,10 @@ img {width: 100%;}
   box-shadow: 0 3px 5px #aaa;
 }
 
-#logo-box{
+.logo-box{
     display: block;
-    padding: 20px;
+    padding: 20px 30px;
+    width: 120px;
     float: left;
 }
 
@@ -58,7 +59,8 @@ img {width: 100%;}
     padding: 20px;
     float: right;
 }
-
+.close{display: none;}
+.header-deco1{display: none;}
 #nav-list{
     list-style-type: none;
     padding: 5px;
@@ -84,13 +86,11 @@ img {width: 100%;}
 .home-container {
     position: relative;
     width: 100%;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     top: 100px;
 }
 
-.home-container span{
-    display: inline-block;
-}
+.home-container span{ display: inline-block;}
 
 .background-text{
   width: 100%;
@@ -99,7 +99,7 @@ img {width: 100%;}
   font-size: 170px;
   line-height: normal;
   font-family: "GothamBold";
-  left: 42vw;
+  left: 42%;
   z-index: -1;
 }
 
@@ -110,45 +110,36 @@ img {width: 100%;}
   font-size: 170px;
   line-height: normal;
   font-family: "GothamBold";
-  left: 64vw;
+  left: 64%;
   z-index: 2;
 }
 
 .bold-line{
   position: fixed;
 }
-.bold-first{z-index: -1; left: -200px;}
-.bold-second{z-index: 2; left: calc(100vw - 350px); top: 270px;}
+.bold-first{z-index: -1; left: -13%; width: 30%;}
+.bold-second{z-index: 2; left: calc(100vw - 25%); top: 270px; width: 30%;}
 
 .fixed-parallax-symbol{
   position: fixed;
-  width: 104px;
-  height: 77px;
+  width: 8%;
   z-index: 2;
-  left: calc(100vw - 180px);
+  left: calc(100vw - 15%);
   top: 190px;
 }
-
-
 .fixed-parallax-circles{
   position: fixed;
-  width: 210px;
-  height: 182px;
+  width: 17%;
   z-index: 2;
-  left: 23vw;
+  left: 22%;
   top: 150px;
 }
 
 .view-product-img{
   position: relative;
   top: 140px;
-  width: 82%;
-  height: 100%;
+  width: 83%;
   z-index: 1;
-}
-.view-product-img img{
-  width: 100%;
-  height: 100%;
 }
 
 .view-product-container{
@@ -176,15 +167,15 @@ img {width: 100%;}
 }
 .circle-lines{
   position: absolute;
-  left: 100px;
-  width: 156px;
+  left: 8%;
+  width: 12%;
   z-index: 1;
   padding-top: 40px;
 }
 .skewcircle{
   position: absolute;
-  width: 350px;
-  left: calc(100vw - 400px);
+  width: 27%;
+  left: calc(100vw - 31%);
   z-index: 1;
 }
 .line-seperator-first{top: 140px;}
@@ -203,21 +194,20 @@ img {width: 100%;}
 }
 .side-blue-deco{
   position: absolute;
-  width: 404px;
+  width: 34%;
   margin-top: 200px;
-  left: calc(100vw - 421px);
+  left: calc(100vw - 33%);
 }
 
 .about-us-container{
   position: absolute;
-  /* top: 140px; */
   margin-top: 140px;
   padding: 50px;
   font-size: 25px;
   font-family: "GothamBold";
   line-height: normal;
   color: #000;
-  left: 100px;
+  left: 9%;
   z-index: 3;
 }
 .about-us-box{
@@ -233,38 +223,34 @@ img {width: 100%;}
   color: #000;
   font-size: 14px;
 }
-
 .about-us-img{
   position: relative;
   top: 140px;
-  width: 68%;
+  width: 71%;
   left: -8%;
   height: 100%;
   z-index: 1;
 }
-.about-us-img img{
-  width: 100%;
-  height: 100%;
-}
 .circle-without-cross{
   position: absolute;
-  width: 422px;
+  width: 33%;
   margin-top: -150px;
   z-index: 2;
-  left: 60%;
+  left: 58%;
   filter: drop-shadow(0px 0px 20px #888);
 }
 .circle-cross{
   position: absolute;
   width: 66px;
-  margin-top: -150px;
+  width: 5%;
+  margin-top: -140px;
   z-index: 2;
-  left: calc(55% + 330px);
+  left: calc(84%);
 }
 .side-pink-deco{
   position: absolute;
-  width: 414px;
-  left: -1px;
+  width: 32%;
+  left: -1%;
   z-index: 2;
   margin-top: 70px;
 }
@@ -293,17 +279,11 @@ img {width: 100%;}
 }
 .hair-care-img-container{
   position: relative;
-  left: 100px;
+  left: 8%;
   overflow: hidden;
-  height: 420px;
   width:48%;
 }
-.hair-care-img{
-  position: relative;
-  height: 420px;
-  display: block;
-  /* left: -180px; */
-}
+.hair-care-img{}
 .hair-care-text{
   position: absolute;
   line-height: normal;
@@ -311,20 +291,20 @@ img {width: 100%;}
   left: 50%;
   z-index: 1;
   font-family: "GothamCondensedBold";
-  top: 100px;
+  top: calc(50% - 90px);
 }
 .hair-care-arrows{
   position: absolute;
-  width: 51px;
+  width: 4%;
   left: 35%;
-  top: 280px;
+  top: 67%;
   z-index: 1;
 }
 .hair-care-dots{
   position: absolute;
   left: 45%;
-  width: 210px;
-  top: 260px;
+  width: 17%;
+  top: 70%;
 }
 .skin-care-container{
   margin-top: 150px;
@@ -333,14 +313,12 @@ img {width: 100%;}
 }
 .skin-care-img-container{
   position: relative;
-  left: calc(100vw - 48% - 100px);
+  left: calc(100vw - 56%);
   overflow: hidden;
-  height: 420px;
   width:48%;
 }
 .skin-care-img{
   position: relative;
-  height: 420px;
   display: block;
 }
 .skin-care-text{
@@ -350,29 +328,30 @@ img {width: 100%;}
   left: 15%;
   z-index: 1;
   font-family: "GothamCondensedBold";
-  top: 100px;
+  top: calc(50% - 100px);
 }
 .skin-care-symbol{
   position: absolute;
-  width: 222px;
+  width: 18%;
   left: 12%;
-  top: -25px;
+  top: -6%;
 }
 .skin-care-circles{
   position: absolute;
-  top:300px;
+  top: 72%;
+  width: 100%;
 }
 .skin-care-yellow-circle{
   position: absolute;
-  width: 185px;
+  width: 13%;
   filter: drop-shadow(0px 0px 20px #888);
-  left: 32vw;
+  left: 39%;
 }
 .skin-care-strip-circles{
   position: absolute;
-  width: 185px;
-  top: 15px;
-  left: calc(32vw - 35px);
+  width: 13%;
+  top: 7px;
+  left: calc(36%);
 }
 .gentlemen-container{
   position: relative;
@@ -381,14 +360,12 @@ img {width: 100%;}
 }
 .gentlemen-img-container{
   position: relative;
-  left: 100px;
+  left: 8%;
   overflow: hidden;
-  height: 420px;
   width:48%;
 }
 .gentlemen-img{
   position: relative;
-  height: 420px;
   display: block;
 }
 .gentlemen-text{
@@ -398,18 +375,19 @@ img {width: 100%;}
   left: 50%;
   z-index: 1;
   font-family: "GothamCondensedBold";
-  top: 100px;
+  top: calc(50% - 100px);
 }
 .gentlemen-circles{
   position: absolute;
   left: 54%;
-  width: 212px;
+  width: 17%;
   top: 280px;
+  top: 70%;
 }
 .gentlemen-strips{
   position: absolute;
-  left: calc(100vw - 338px);
-  width: 238px;
+  left: calc(100vw - 27%);
+  width: 19%;
   top: 0px;
 }
 .private-label-container{
@@ -419,15 +397,19 @@ img {width: 100%;}
 }
 .private-label-img-container{
   position: relative;
-  left: calc(100vw - 48% - 100px);
-  overflow: hidden;
-  height: 420px;
+  left: calc(100vw - 56%);
   width:48%;
 }
 .private-label-img{
   position: relative;
-  height: 420px;
   display: block;
+}
+.private-label-label{
+  position: absolute;
+  width: 18%;
+  left: 73%;
+  top: 4%;
+  z-index: 1;
 }
 .private-label-text{
   position: absolute;
@@ -442,32 +424,31 @@ img {width: 100%;}
   position: absolute;
   top: 30px;
   z-index: 1;
-  width: 160px;
-  left: 40%;
+  width: 13%;
+  left: 39%;
 }
 .private-label-dots{
   position: absolute;
-  top: 300px;
+  top: 74%;
   z-index: 1;
-  width: 209px;
+  width: 16%;
   left: 42%;
 }
 .private-label-circles{
   position: absolute;
-  top: 200px;
-  z-index: -1;
-  width: 330px;
-  left: 30px;
+  top: 43%;
+  width: 24%;
+  left: 2.5%;
 }
 .private-label-tag{
   position: relative;
   width: 100%;
   line-height: normal;
   text-align: right;
-  padding: 0 100px;
+  padding: 0 8%;
   margin-top: -40px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: bold;
   font-family: "GothamBold";
 }
 .design-space-crosses{
@@ -476,56 +457,55 @@ img {width: 100%;}
   overflow: hidden;
 }
 .deco-cross{
-  padding: 200px 0 160px 0;
+  padding: 16% 0 13% 0;
   display: block;
   margin: auto;
-  width: 690px;
+  width: 55%;
 }
 .deco-cross-img{
   position: relative;
-  height: 521;
 }
 .side-colors-deco{
   position: absolute;
-  width: 201px;
-  left: calc(100vw - 210px);
-  top: 160px;
+  width: 16%;
+  left: calc(100vw - 17%);
+  top: 18%;
 }
 .deco-up-arrows{
   position: absolute;
-  width: 21px;
-  top: 160px;
+  width: 1.7%;
+  top: 18%;
   left: 25%;
 }
 .deco-down-arrows{
   position: absolute;
-  width: 67px;
-  top: 280px;
+  width: 5%;
+  top: 32%;
   left: 16%;
 }
 .deco-dots-top{
   position: absolute;
   width: 24px;
-  top: 280px;
+  width: 2%;
+  top: 32%;
   left: 60%;
 }
 .deco-dots-bottom{
   position: absolute;
-  width: 24px;
-  top: 630px;
+  width: 2%;
+  top: 72%;
   left: 26%;
 }
 .deco-close-symbol{
   position: absolute;
-  width: 42px;
-  top: 550px;
+  width: 3.4%;
+  top: 62%;
   left: 35%;
 }
-.deco-close-symbol img{width: 42px;}
 .deco-small-circle{
   position: absolute;
-  width: 62px;
-  top: 650px;
+  width: 5%;
+  top: 73%;
   left: 5%;
 }
 .blog-container{
@@ -547,7 +527,6 @@ img {width: 100%;}
   display: block;
   position: relative;
   width: 60%;
-  height: 100%;
   overflow: hidden;
 }
 .blogs-images{
@@ -585,27 +564,27 @@ img {width: 100%;}
 }
 .follow-left-deco{
   position: absolute;
-  left: -2px;
-  width: 288px;
-  top: 450px;
+  left: -1%;
+  width: 22%;
+  top: 40%;
 }
 .follow-dots{
   position: absolute;
-  left: calc(100vw - 110px);
-  width: 42px;
-  top: 420px;
+  left: calc(100vw - 9%);
+  width: 3.4%;
+  top: 35%;
 }
 .follow-arrows{
   position: absolute;
-  left: 200px;
-  width: 27px;
-  top: 650px;
+  left: 16%;
+  width: 2.1%;
+  top: 58%;
 }
 .follow-right-deco{
   position: absolute;
-  left: calc(100vw - 148px);
-  width: 148px;
-  top: 680px;
+  left: calc(100vw - 12%);
+  width: 12%;
+  top: 60%;
 }
 .follow-us-title{
   position: relative;
@@ -618,13 +597,12 @@ img {width: 100%;}
 .follow-contatiner{
   position: relative;
   display: flex;
-  width: calc(100vw - 160px);
-  /* height: 100px; */
+  width: calc(100vw - 15%);
 }
 .facebook-follow, .instagram-follow{
   position: relative;
   width: 50%;
-  height: calc((100vw - 160px) / 2);
+  height: calc((85vw) / 2);
   padding: 50px;
 }
 .facebook{background: #999; width: 100%; height: 100%;}
@@ -666,4 +644,297 @@ img {width: 100%;}
   padding: 10px;
   background: #000;
   text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  #header-container{height: 60px;}
+  .logo-box{padding: 15px 20px; width: 80px;}
+  .close{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    left: 88%;
+    top: 3%;
+    overflow: hidden;
+  }
+  .close::before, .close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+  #nav-header::before{
+    content: "";
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px #000;
+  }
+  .close::before{ transform: rotate(45deg);}
+  .close::after{ transform: rotate(-45deg);}
+  .header-deco1{display: block; position: absolute; width: 36%; left: 65%; top: 30%; transform: rotateY(180deg);}
+  #nav-header{display: none; position: absolute;overflow: hidden; height: 180px; background: #fff; top: 64px; padding-left: 0; border: 0.5px solid #000;}
+  #nav-list{padding: 5px 0px; padding-right: 20px;}
+  #nav-list li{display: block; font-size: 14px; padding: 2px 15px; padding-left: 0;}
+  .nav-item{padding:  0px 15px; display: block; border-bottom: 1px solid #000; box-sizing: border-box;}
+  .broucher-item{position: absolute; top: 140px; margin-top:5px ;left:45px; font-size: 12px;}
+  .darrow{ font-size: 11px; padding: 2px; font-weight: bold;}
+  .nav-brochure{padding: 2px; font-size: 11px;}
+  .home-container{top: 60px;}
+  .background-text{top: 60px; font-size: 64px;}
+  .foreground-text{top: 140px; font-size: 64px; left: 55%;}
+  .bold-second{top: 130px;}
+  .fixed-parallax-symbol{top: 88px; left: 90%;}
+  .fixed-parallax-circles{top: 100px;}
+  .view-product-img{top: 55px; width: 94%;}
+  .view-product-container{top: 7%; padding: 20px; font-size: 14px;}
+  .view-product-box{ padding: 7px; color: #000;}
+  .view-product-text{padding: 0 5px;}
+  .view-product-text span{font-size: 8px;}
+  .circle-lines{margin-top: -15px; padding-top: 0; left: 0;}
+  .skewcircle{}
+  .line-seperator-first{top: 60px; }
+  .line-seperator img{width: 8px;}
+  .side-blue-deco{ margin-top: 110px; width: 30%; left: calc(100vw - 27%);}
+  .about-us-container{ margin-top: 20px; padding: 20px; font-size: 14px; left: 0;}
+  .about-us-box{padding: 7px; color: #000;}
+  .about-us-text{ padding: 5px 15px;}
+  .about-us-text span{font-size: 8px;}
+  .about-us-img{ top: 70px; width: 78%;}
+  .circle-without-cross{ width: 30%; margin-top: 40px; left: 67%;}
+  .circle-cross{margin-top: 44px; left: 92%}
+  .side-pink-deco{margin-top: 120px;}
+  .cosmo-silky-container{ font-size: 48px; margin-top: 35px;}
+  .hair-care-img-container{width: 80%; left: 5%;}
+  .hair-care-text{font-size: 64px; left: 0; top: 85%; right: 15%; text-align: right;}
+  .hair-care-arrows{left: 10%; top: 75%;}
+  .hair-care-dots{left: 68%; width: 32%; top: -210px}
+  .skin-care-img-container{width: 80%; left: 15%;}
+  .skin-care-text{font-size: 64px; left: 15%; top: 85%;}
+  .skin-care-symbol{top: -55px; left: 70%;}
+  .skin-care-circles{top: -15%;}
+  .skin-care-yellow-circle{width: 25%; left: 10%;}
+  .skin-care-strip-circles{width: 25%; left: 5%;}
+  .gentlemen-img-container{left: 5%; width: 80%;}
+  .gentlemen-text{font-size: 64px; text-align: right; right: 15%; left: 0; top: 82%;}
+  .gentlemen-circles{top: -12%; left: 80%;}
+  .gentlemen-strips{left: calc(100vw - 34%); top: 100%;}
+  .private-label-img-container{left: 5%; width: 70%;}
+  .private-label-label{width: 25%; left: 67%; top: -20%;}
+  .private-label-text{font-size: 64px; top: -18%;left: 25%;}
+  .private-label-text2{left: 55%; position: relative;}
+  .private-label-arrow{left: 76%; top: 40%; width: 20%;}
+  .private-label-dots{width: 24%; left: 78%; top: 100%;}
+  .private-label-circles{left: 1%; top: 90%; }
+  .private-label-tag{font-size: 12px; margin-top: -20px;}
+  .design-space-crosses{margin-top: 50px;}
+  .blog-container{height: 200px; margin-top: 50px;}
+  .blogs-images-container{width: 100%;}
+  .blogs-images img{height: 200px;}
+  .blog-title{ font-size: 75px; top: -58px;}
+  .follow-us-container{padding: 12px 20px;}
+  .follow-us-title{ font-size: 32px;}
+  .follow-contatiner{display: block; width: 50%; margin: auto;}
+  .facebook-follow, .instagram-follow{ width: 100%; padding: 10px;}
+  .follow-left-deco{ width: 36%; top: 10%;}
+  .follow-dots{left: 80%; top: 25%;}
+  .follow-arrows{width: 4%; top: 45%;}
+  .follow-right-deco{width: 25%; left: 75%; top: 40%;}
+  .email-subscribe-container{margin-top: 0px; display: block; padding: 20px 50px;}
+  .line-svg{width: 100%; padding: 15px 0;}
+  .line-svg2{display: none;}
+  .email-subscribe{ padding: 0 20px; margin: auto; width: 100%;}
+  .email{font-size: 12px;padding: 0px;}
+  .subscribe{font-size: 12px; padding: 0;}
+}
+@media screen and (min-width: 320px) and (max-width: 350px) {
+  .view-product-container{top: 6%;}
+  .private-label-text{font-size: 48px;}
+}
+
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  .view-product-container{top: 6.5%;}
+  .private-label-text{font-size: 56px;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 650px) {
+  #header-container{height: 70px;}
+  .logo-box{padding: 15px 20px; width: 90px;}
+  .close{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    left: 88%;
+    top: 3%;
+    overflow: hidden;
+  }
+  .close::before, .close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+  #nav-header::before{
+    content: "";
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px #000;
+  }
+  .close::before{ transform: rotate(45deg);}
+  .close::after{ transform: rotate(-45deg);}
+  .header-deco1{display: block; position: absolute; width: 36%; left: 65%; top: 30%; transform: rotateY(180deg);}
+  #nav-header{display: none; position: absolute;overflow: hidden; height: 180px; background: #fff; top: 74px; padding-left: 0; border: 0.5px solid #000;}
+  #nav-list{padding: 5px 0px; padding-right: 20px;}
+  #nav-list li{display: block; font-size: 14px; padding: 2px 15px; padding-left: 0;}
+  .nav-item{padding:  0px 15px; display: block; border-bottom: 1px solid #000; box-sizing: border-box;}
+  .broucher-item{position: absolute; top: 140px; margin-top:5px ;left:45px; font-size: 12px;}
+  .darrow{ font-size: 11px; padding: 2px; font-weight: bold;}
+  .nav-brochure{padding: 2px; font-size: 11px;}
+  .home-container{top: 70px;}
+  .background-text{top: 70px; font-size: 80px;}
+  .foreground-text{top: 160px; font-size: 80px; }
+  .bold-second{top: 150px;}
+  .fixed-parallax-symbol{top: 100px; left: 80%;}
+  .fixed-parallax-circles{top: 110px;}
+  .view-product-img{top: 70px; width: 90%;}
+  .view-product-container{top: 7.3%; left: 10%; padding: 30px; font-size: 18px;}
+  .view-product-box{ padding: 15px; color: #000;}
+  .view-product-text{padding: 0 10px;}
+  .view-product-text span{font-size: 12px;}
+  .circle-lines{margin-top: -15px; padding-top: 0; left: 0;}
+  .skewcircle{}
+  .line-seperator-first{top: 60px; }
+  .line-seperator img{width: 8px;}
+  .side-blue-deco{ margin-top: 110px; width: 30%; left: calc(100vw - 27%);}
+  .about-us-container{ margin-top: 0px; margin-left: 10%; padding: 30px; font-size: 18px; left: 0;}
+  .about-us-box{padding: 15px; color: #000;}
+  .about-us-text{ padding: 0px 15px;}
+  .about-us-text span{font-size: 12px;}
+  .about-us-img{ top: 70px; width: 78%;}
+  .circle-without-cross{ width: 24%; margin-top: 0px; left: 67%;}
+  .circle-cross{margin-top: 4px; left: 86%}
+  .side-pink-deco{margin-top: 120px;}
+  .cosmo-silky-container{ font-size: 60px; margin-top: 25px;}
+  .hair-care-img-container{width: 70%; left: 10%;}
+  .hair-care-text{font-size: 80px; left: 0; top: 78%; right: 20%; text-align: right;}
+  .hair-care-arrows{left: 15%; top: 65%;}
+  .hair-care-dots{left: 75%; width: 26%; top: -210px}
+  .skin-care-img-container{width: 70%; left: 20%;}
+  .skin-care-text{font-size: 80px; left: 20%; top: 78%;}
+  .skin-care-symbol{top: -60px; left: 70%;}
+  .skin-care-circles{top: -12%;}
+  .skin-care-yellow-circle{width: 20%; left: 10%;}
+  .skin-care-strip-circles{width: 20%; left: 5%;}
+  .gentlemen-img-container{left: 10%; width: 70%;}
+  .gentlemen-text{font-size: 80px; text-align: right; right: 20%; left: 0; top: 80%;}
+  .gentlemen-circles{top: -12%; left: 80%;}
+  .gentlemen-strips{left: calc(100vw - 34%); top: 100%;}
+  .private-label-img-container{left: 10%; width: 70%;}
+  .private-label-label{width: 25%; left: 67%; top: -20%;}
+  .private-label-text{font-size: 80px; top: -15%;left: 32%;}
+  .private-label-text2{left: 55%; position: relative;}
+  .private-label-arrow{left: 80%; top: 40%; width: 18%;}
+  .private-label-dots{width: 24%; left: 78%; top: 100%;}
+  .private-label-circles{left: 1%; top: 90%; }
+  .private-label-tag{font-size: 15px; margin-top: -30px;}
+  .design-space-crosses{margin-top: 50px;}
+  .blog-container{height: 350px; margin-top: 50px;}
+  .blogs-images-container{width: 80%;}
+  .blogs-images img{height: 350px;}
+  .blog-title{ font-size: 100px; top: -72px;}
+  .follow-us-container{padding: 15px 24px;}
+  .follow-us-title{ font-size: 40px;}
+  .follow-contatiner{display: block; width: 50%; margin: auto;}
+  .facebook-follow, .instagram-follow{ width: 100%; padding: 10px;}
+  .follow-left-deco{ width: 36%; top: 10%;}
+  .follow-dots{left: 80%; top: 25%;}
+  .follow-arrows{width: 4%; top: 45%;}
+  .follow-right-deco{width: 25%; left: 75%; top: 40%;}
+  .email-subscribe-container{margin-top: 0px; width: 70%; margin: auto; display: block; padding: 20px 50px;}
+  .line-svg{width: 100%; padding: 15px 0; }
+  .line-svg2{display: none;}
+  .email-subscribe{ padding: 0 20px; margin: auto; width: 100%;}
+  .email{font-size: 15px;padding: 2px;}
+  .subscribe{font-size: 15px; padding: 2px;}
+}
+
+@media screen and (min-width: 421px) and (max-width: 530px) {
+  .view-product-container{top: 7%; left: 10%; padding: 30px; font-size: 18px;}
+  .private-label-text{font-size: 70px; top: -18%;left: 29%;}
+  .blog-container{height: 270px; margin-top: 50px;}
+  .blogs-images-container{width: 90%;}
+  .blogs-images img{height: 350px;}
+  .blog-title{ font-size: 84px; top: -64px;}
+  .email-subscribe-container{margin-top: 0px; width: 80%; margin: auto; display: block; padding: 20px 50px;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 960px) {
+  #header-container{height: 80px;}
+  .logo-box{padding: 15px 20px; width: 100px;}
+  #nav-list{padding: 5px 0px;}
+  #nav-list li{ font-size: 16px; padding: 0 10px;}
+  .darrow{ font-size: 24px; padding: 2px; padding-bottom: 4px; font-weight: bold;}
+  .home-container{top: 80px;}
+  .background-text{top: 80px; font-size: 120px;}
+  .foreground-text{top: 240px; font-size: 120px; }
+  .bold-second{top: 230px;}
+  .fixed-parallax-symbol{top: 140px; left: 80%;}
+  .fixed-parallax-circles{top: 150px;}
+  .view-product-img{top: 100px; width: 85%;}
+  .view-product-container{padding: 30px; font-size: 21px; top: 100px;}
+  .view-product-box{ padding: 25px;}
+  .view-product-text{padding: 0 10px;}
+  .view-product-text span{font-size: 13px;}
+  .line-seperator-first{top: 120px; }
+  .about-us-container{padding: 30px; font-size: 21px; left: 7%;}
+  .about-us-box{padding: 25px; color: #000;}
+  .about-us-text{ padding: 0px 10px;}
+  .about-us-text span{font-size: 13px;}
+  .about-us-img{ top: 140px; width: 74%;}
+  .circle-without-cross{ width: 30%; margin-top: 0px; left: 61%;}
+  .circle-cross{margin-top: 4px; left: 85%}
+  .cosmo-silky-container{ font-size: 90px; margin-top: 85px;}
+  .hair-care-img-container{width: 60%; left: 8%;}
+  .hair-care-text{font-size: 120px;  top: calc(50% - 70px);}
+  .skin-care-img-container{width: 60%; left: 32%;}
+  .skin-care-text{font-size: 120px;  top: calc(50% - 70px);}
+  .skin-care-yellow-circle{ left: 27%;}
+  .skin-care-strip-circles{ left: 24%;}
+  .gentlemen-img-container{left: 8%; width: 60%;}
+  .gentlemen-text{font-size: 120px; top: calc(50% - 70px); left: 40%;}
+  .gentlemen-circles{left: 64%;}
+  .private-label-text{font-size: 110px; top: 0px; left: 10%;}
+  .private-label-arrow{left: 40%; top: 0px; width: 13%;}
+  .private-label-tag{font-size: 20px; margin-top: -30px;}
+  .blog-container{height: 380px; margin-top: 50px;}
+  .blogs-images-container{width: 70%;}
+  .blogs-images img{height: 380px;}
+  .blog-title{ font-size: 200px; top: -142px;}
+  .follow-us-container{padding: 40px 60px;}
+  .follow-us-title{ font-size: 54px;}
+  .facebook-follow, .instagram-follow{padding: 30px;}
+  .email-subscribe-container{padding: 0}
+  .line-svg{width: 30%; padding: 25px 0; }
+  .email-subscribe{ padding: 0 30px; margin: auto; width: 40%;}
+  .email{font-size: 18px;padding: 5px;}
+  .subscribe{font-size: 18px; padding: 5px;}
+}
+
+@media screen and (min-width: 651px) and (max-width: 820px) {
+.blog-container{height: 350px; margin-top: 50px;}
+.blogs-images-container{width: 80%;}
+.blog-title{ font-size: 150px; top: -100px;}
 }
