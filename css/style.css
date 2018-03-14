@@ -261,7 +261,7 @@ img {width: 100%;}
   font-family: "GothamBold";
   line-height: normal;
   margin-top: 60px;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 2;
 }
 .cosmo-silky-top-text{
@@ -522,11 +522,13 @@ img {width: 100%;}
   height: 100%;
   padding: 2%;
   width: 10%;
+  max-width: 160px;
 }
 .blogs-images-container{
   display: block;
   position: relative;
   width: 60%;
+  max-width: 800px;
   overflow: hidden;
 }
 .blogs-images{
@@ -542,6 +544,7 @@ img {width: 100%;}
   height: 100%;
   padding: 2%;
   width: 10%;
+  max-width: 160px;
 }
 .blogs-images img{
   height: 400px;
@@ -607,6 +610,10 @@ img {width: 100%;}
 }
 .facebook{background: #999; width: 100%; height: 100%;}
 .instagram{background: #777; width: 100%; height: 100%;}
+.facebook img{ width: 100%; height: 100%;}
+.instagram img{ width: 100%; height: 100%;}
+.fb-cover, .insta-cover{position: relative; top: -100%;}
+
 .email-subscribe-container{
   position: relative;
   display: flex;
@@ -937,4 +944,65 @@ img {width: 100%;}
 .blog-container{height: 350px; margin-top: 50px;}
 .blogs-images-container{width: 80%;}
 .blog-title{ font-size: 150px; top: -100px;}
+}
+
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  #header-container{height: 90px;}
+  /* .logo-box{padding: 15px 20px; width: 100px;} */
+  /* #nav-list{padding: 5px 0px;} */
+  /* #nav-list li{ font-size: 16px; padding: 0 10px;} */
+  /* .darrow{ font-size: 24px; padding: 2px; padding-bottom: 4px; font-weight: bold;} */
+  .home-container{top: 90px;}
+  .background-text{top: 90px; font-size: 150px;}
+  .foreground-text{top: 270px; font-size: 150px; }
+  .bold-second{top: 260px;}
+  .fixed-parallax-symbol{top: 150px; left: 84%;}
+  .fixed-parallax-circles{top: 160px;}
+  .view-product-img{top: 130px; width: 84%;}
+  /* .view-product-container{padding: 30px; font-size: 21px; top: 100px;} */
+  /* .view-product-box{ padding: 25px;} */
+  /* .view-product-text{padding: 0 10px;} */
+  /* .view-product-text span{font-size: 13px;} */
+  /* .line-seperator-first{top: 120px; } */
+  /* .about-us-container{padding: 30px; font-size: 21px; left: 7%;} */
+  /* .about-us-box{padding: 25px; color: #000;} */
+  /* .about-us-text{ padding: 0px 10px;} */
+  /* .about-us-text span{font-size: 13px;} */
+  /* .about-us-img{ top: 140px; width: 74%;} */
+  /* .circle-without-cross{ width: 30%; margin-top: 0px; left: 61%;} */
+  /* .circle-cross{margin-top: 4px; left: 85%} */
+  .cosmo-silky-container{ font-size: 110px; margin-top: 80px;}
+  /* .hair-care-img-container{width: 60%; left: 8%;} */
+  .hair-care-text{font-size: 150px;  top: calc(50% - 80px);}
+  /* .skin-care-img-container{width: 60%; left: 32%;} */
+  .skin-care-text{font-size: 150px;  top: calc(50% - 80px);}
+  /* .skin-care-yellow-circle{ left: 27%;} */
+  /* .skin-care-strip-circles{ left: 24%;} */
+  /* .gentlemen-img-container{left: 8%; width: 60%;} */
+  .gentlemen-text{font-size: 140px; top: calc(50% - 80px); left: 50%;}
+  /* .gentlemen-circles{left: 64%;} */
+  .private-label-text{font-size: 140px; top: 0px; left: 10%;}
+  /* .private-label-arrow{left: 40%; top: 0px; width: 13%;} */
+  .private-label-tag{font-size: 22px; margin-top: -35px;}
+  .blog-container{height: 380px; margin-top: 50px;}
+  .blogs-images-container{width: 70%;}
+  .blogs-images img{height: 380px;}
+  .blog-title{ font-size: 240px; top: -172px;}
+  .follow-us-container{padding: 50px 70px;}
+  .follow-us-title{ font-size: 60px;}
+  .facebook-follow, .instagram-follow{padding: 40px;}
+  .email-subscribe-container{padding: 0}
+  .line-svg{width: 30%; padding: 25px 0; }
+  .email-subscribe{ padding: 0 30px; margin: auto; width: 40%;}
+  .email{font-size: 19px;padding: 7px;}
+  .subscribe{font-size: 19px; padding: 7px;}
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1200px) {
+  .gentlemen-text{font-size: 150px;}
+  .private-label-text{font-size: 150px;}
+  .private-label-tag{font-size: 24px; margin-top: -40px;}
+  .blog-container{height: 400px; margin-top: 50px;}
+  .blogs-images-container{width: 65%;}
+  .blogs-images img{height: 400px;}
 }
