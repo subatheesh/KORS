@@ -69,6 +69,12 @@ $(document).ready(function(){
     var haircaredotstop = $("#HairCareDots").offset().top;
     var haircaredotsleft = $("#HairCareDots").offset().left;
 
+    var skincaresymboltop = $("#SkinCareSymbol").offset().top;
+    var skincaresymbolleft = $("#SkinCareSymbol").offset().left;
+
+    var skincarecirclestop = $("#SkinCareCircles").offset().top;
+    var skincarecirclesleft = $("#SkinCareCircles").offset().left;
+
     $(window).mousemove(function( event ) {
         mouseParallax($("#SkewCircle"), event.clientX, event.clientY, skewcircleTop, skewcircleLeft, 2);
         mouseParallaxInverse($("#CircleLine"), event.clientX, event.clientY, circlelineTop, circlelineLeft, 3);
@@ -78,6 +84,8 @@ $(document).ready(function(){
         mouseParallaxReverseInverse($("#CosmoSilkyBottomText"), event.clientX, event.clientY, cosmosilkybottomtexttop, cosmosilkybottomtextleft, 2);
         mouseParallaxReverse($("#HairCareArrows"), event.clientX, event.clientY, haircarearrowstop, haircarearrowsleft, 1);
         mouseParallax($("#HairCareDots"), event.clientX, event.clientY, haircaredotstop, haircaredotsleft, 3);
+        mouseParallax($("#SkinCareSymbol"), event.clientX, event.clientY, skincaresymboltop, skincaresymbolleft, 2);
+        mouseParallaxInverse($("#SkinCareCircles"), event.clientX, event.clientY, skincarecirclestop, skincarecirclesleft, 2);
     });
 
 
