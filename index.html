@@ -13,12 +13,12 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </head>
@@ -36,10 +36,10 @@
                 <div class="close black"></div>
                 <div class="header-deco1"><img src="img/svg/kors website homepage-13.svg"/></div>
                 <ul id="nav-list">
-                    <li class="broucher-item"><span class="nav-brochure">Broucher </span><span class="darrow">&#x2193;</span></li>
-                    <li><span class="nav-item">About Us</span></li>
-                    <li><span class="nav-item">Products</span></li>
-                    <li><span class="nav-item">Contact Us</span></li>
+                    <li class="broucher-item"><a href="#homeContainer"><span class="nav-brochure">Broucher </span><span class="darrow">&#x2193;</span></li>
+                    <li><a href="#AboutUs"><span class="nav-item">About Us</span></a></li>
+                    <li><a href="#HairCareContainer"><span class="nav-item">Products</span></li>
+                    <li><a href="contact-us"><span class="nav-item">Contact Us</span></li>
                 </ul>
             </div>
         </div>
@@ -73,7 +73,11 @@
                     <div class="about-us-text">About <br/> &nbsp; &nbsp; &nbsp; &nbsp; Us &nbsp; &nbsp; &nbsp; <span>&#9658;</span></div>
                 </div>
             </div>
-            <div class="about-us-img">
+            <div class="kors-colormatic">
+                <div class="about-kors" id="AboutKors"><span>K</span><span>o</span><span>r</span><span>s</span></div>
+                <div class="about-colormatic" id="AboutColormatic"><span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>m</span><span>a</span><span>t</span><span>i</span><span>c</span></div>
+            </div>
+            <div class="about-us-img" id="AboutUs">
                 <img src="img/AboutUs.jpg"/>
             </div>
             <div class="circle-without-cross" id="CircleWithoutCross"><img src="img/svg/kors website homepage-21.svg"/></div>
@@ -88,7 +92,7 @@
                 </div>
             </div>
             <div class="line-seperator-second line-seperator"  id="LineSeperator"><img src="img/svg/kors website homepage-24.svg" align="middle"/></div>
-            <div class="hair-care-container">
+            <div class="hair-care-container" id="HairCareContainer">
                 <div class="hair-care-text"><span>H</span><span>a</span><span>i</span><span>r</span><span>&nbsp;</span><span>C</span><span>a</span><span>r</span><span>e</span></div>
                 <div class="hair-care-img-container"><img class="hair-care-img" src="img/HairCare.jpg"/></div>
                 <div class="hair-care-arrows" id="HairCareArrows"><img src="img/svg/kors website homepage-37.svg"/></div>
@@ -107,25 +111,25 @@
                 <div class="gentlemen-text"><span>G</span><span>e</span><span>n</span><span>t</span><span>l</span><span>e</span><span>m</span><span>e</span><span>n</span></div>
                 <div class="gentlemen-img-container"><img class="gentlemen-img" src="img/GentleMen.jpg"/></div>
                 <div class="gentlemen-strips"><img src="img/svg/kors website homepage-42.svg"/></div>
-                <div class="gentlemen-circles"><img src="img/svg/kors website homepage-32.svg"/></div>
+                <div class="gentlemen-circles" id="GentleMenCircles"><img src="img/svg/kors website homepage-32.svg"/></div>
             </div>
             <div class="private-label-container">
-                <div class="private-label-arrow"><img src="img/svg/kors website homepage-25.svg"/></div>
+                <div class="private-label-arrow" id="PrivateLabelArrows"><img src="img/svg/kors website homepage-25.svg"/></div>
                 <div class="private-label-text"><span>P</span><span>r</span><span>i</span><span>v</span><span>a</span><span>t</span><span>e</span><br/><div class="private-label-text2"><span>&nbsp;&nbsp;</span><span>L</span><span>a</span><span>b</span><span>e</span><span>l</span></div></div>
                 <div class="private-label-img-container"><img class="private-label-img" src="img/privatelabel.jpg"/></div>
                 <div class="private-label-label"><img src="img/svg/kors website private label-53.svg"/></div>
                 <div class="private-label-tag"><b>OUR PRODUCT - YOUR NAME</b></div>
-                <div class="private-label-dots"><img src="img/svg/kors website homepage-30.svg"/></div>
-                <div class="private-label-circles"><img src="img/svg/kors website homepage-31.svg"/></div>
+                <div class="private-label-dots" id="PrivateLabelDots"><img src="img/svg/kors website homepage-30.svg"/></div>
+                <div class="private-label-circles" id="PrivateLabelCircles"><img src="img/svg/kors website homepage-31.svg"/></div>
             </div>
             <div class="design-space-crosses">
                 <div class="side-colors-deco"><img class="side-colors-img" src="img/svg/kors website homepage-11.svg"/></div>
-                <div class="deco-up-arrows"><img src="img/svg/kors website homepage-28.svg"/></div>
-                <div class="deco-down-arrows"><img src="img/svg/kors website homepage-29.svg"/></div>
-                <div class="deco-dots-top"><img src="img/svg/kors website homepage-26.svg"/></div>
-                <div class="deco-dots-bottom"><img src="img/svg/kors website homepage-26.svg"/></div>
-                <div class="deco-close-symbol"><img src="img/svg/kors website homepage-21a.svg"/></div>
-                <div class="deco-small-circle"><img src="img/svg/kors website homepage-38.svg"/></div>
+                <div class="deco-up-arrows" id="DecoUpArrows"><img src="img/svg/kors website homepage-28.svg"/></div>
+                <div class="deco-down-arrows" id="DecoDownArrows"><img src="img/svg/kors website homepage-29.svg"/></div>
+                <div class="deco-dots-top" id="DecoDotsTop"><img src="img/svg/kors website homepage-26.svg"/></div>
+                <div class="deco-dots-bottom" id="DecoDotsBottom"><img src="img/svg/kors website homepage-26.svg"/></div>
+                <div class="deco-close-symbol" id="DecoCloseSymbol"><img src="img/svg/kors website homepage-21a.svg"/></div>
+                <div class="deco-small-circle" id="DecoSmallCircle"><img src="img/svg/kors website homepage-38.svg"/></div>
                 <div class="deco-cross"><img class="deco-cross-img" src="img/svg/kors website homepage-15.svg"/></div>
             </div>
             <div class="blog-container">
@@ -143,8 +147,8 @@
             </div>
             <div class="follow-us-container">
                 <div class="follow-left-deco"><img src="img/svg/kors website homepage-12.svg"/></div>
-                <div class="follow-dots"><img src="img/svg/kors website homepage-26.svg"/></div>
-                <div class="follow-arrows"><img src="img/svg/kors website homepage-28.svg"/></div>
+                <div class="follow-dots" id="FollowDots"><img src="img/svg/kors website homepage-26.svg"/></div>
+                <div class="follow-arrows" id="FollowArrows"><img src="img/svg/kors website homepage-28.svg"/></div>
                 <div class="follow-right-deco"><img src="img/svg/kors website homepage-41.svg"/></div>
                 <div class="follow-us-title">Follow Us</div>
                 <div class="follow-contatiner">
@@ -176,6 +180,29 @@
                           <line x1="0" y1="9" x2="1000" y2="9" style="stroke:rgb(0,0,0);stroke-width:1" />
                       </svg>
                     </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-link-line-seperator"><div class="footer-top-line"></div></div>
+                <div class="footer-link-container">
+                    <div class="footer-section section-1">
+                        <div class="footer-links">Brochure 2018</div>
+                        <div class="footer-links">About us</div>
+                        <div class="footer-links">Products</div>
+                    </div>
+                    <div class="footer-section"></div>
+                    <div class="footer-section section-2">
+                        <div class="footer-links">Contact Us</div>
+                        <div class="footer-links">Privacy Policy</div>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-line-seperator"><div class="footer-top-line"></div></div>
+                    <div class="footer-text">K O R S &nbsp; P E R F U M E S &nbsp; & &nbsp; C O S M E T I C S &nbsp; L L P &nbsp;<br/>B a w a n a &nbsp; , &nbsp; h a r y a n a</div>
+                    <div class="footer-line-seperator"><div class="footer-top-line"></div></div>
+                    <div class="footer-text">D e s i g n e d &nbsp; & &nbsp; D e v e l o p e d &nbsp; B y &nbsp; B u b b l e C o .</div>
+                    <div class="footer-line-seperator"><div class="footer-top-line"></div></div>
+                    <div class="footer-text">A l l &nbsp; R i g h t s &nbsp; R e s e r v e d &nbsp; ` 2 0 1 8 <br/> C o p y r i g h t s &nbsp; R e s e r v e d</div>
                 </div>
             </div>
         </div>
