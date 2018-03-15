@@ -1,6 +1,4 @@
 var mouseParallax = function(elem, x, y, etop, eleft, speed) {
-  // var y = event.clientY;
-  // var x = event.clientX;
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
@@ -10,8 +8,6 @@ var mouseParallax = function(elem, x, y, etop, eleft, speed) {
 };
 
 var mouseParallaxInverse = function(elem, x, y, etop, eleft, speed) {
-  var x = event.clientX;
-  var y = event.clientY;
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
@@ -21,8 +17,6 @@ var mouseParallaxInverse = function(elem, x, y, etop, eleft, speed) {
 };
 
 var mouseParallaxReverse = function(elem, x, y, etop, eleft, speed) {
-  var x = event.clientX;
-  var y = event.clientY;
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
@@ -32,8 +26,6 @@ var mouseParallaxReverse = function(elem, x, y, etop, eleft, speed) {
 };
 
 var mouseParallaxReverseInverse = function(elem, x, y, etop, eleft, speed) {
-  var x = event.clientX;
-  var y = event.clientY;
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
@@ -65,7 +57,7 @@ $(document).ready(function(){
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
-              scrollTop: target.offset().top - 100
+              scrollTop: target.offset().top - $("#header-container").height()
             }, 1000, function() {
               // Callback after animation
               // Must change focus!

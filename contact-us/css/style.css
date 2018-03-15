@@ -32,6 +32,14 @@
     src: url("../../font/GothamCondensed-Light.otf");
 }
 img{ width: 100%;}
+
+a{ color: #000;}
+
+a:hover{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #fff;
 }

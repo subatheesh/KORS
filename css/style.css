@@ -73,9 +73,7 @@ img {width: 100%;}
     font-family: "GothamLight";
 }
 
-a{
-  color: #000;
-}
+a{ color: #000;}
 a:hover{
   color: #000;
   text-decoration: none;
