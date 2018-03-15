@@ -41,6 +41,7 @@ img{width: 100%;}
 .about-back{
   position: absolute;
   top: 80px;
+  z-index: 1;
   left: 50px;
   width: 60px;
 }

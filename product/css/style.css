@@ -87,6 +87,7 @@ img{width: 100%;}
 .product-back-symbol{
   position: absolute;
   width: 60px;
+  z-index: 1;
   top: 80px;
   left: 50px;
 }

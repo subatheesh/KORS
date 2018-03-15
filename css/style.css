@@ -48,7 +48,7 @@ img {width: 100%;}
 }
 
 .logo-box{
-    display: block;
+    display: none;
     padding: 20px 30px;
     width: 120px;
     float: left;
@@ -745,7 +745,7 @@ a:hover{
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
   #header-container{height: 60px;}
-  .logo-box{padding: 15px 20px; width: 80px;}
+  .logo-box{display: block; padding: 15px 20px; width: 80px;}
   .close{
     position: absolute;
     display: inline-block;
@@ -873,7 +873,7 @@ a:hover{
 
 @media screen and (min-width: 421px) and (max-width: 650px) {
   #header-container{height: 70px;}
-  .logo-box{padding: 15px 20px; width: 90px;}
+  .logo-box{display: block; padding: 15px 20px; width: 90px;}
   .close{
     position: absolute;
     display: inline-block;
