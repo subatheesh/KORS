@@ -34,6 +34,19 @@ var mouseParallaxReverseInverse = function(elem, x, y, etop, eleft, speed) {
   elem.offset({top: elemTop, left: elemLeft});
 };
 
+var subscribeEmail = function(e) {
+  e.preventDefault();
+  alert("gh");
+  $("#SubscribeMsg").html("");
+  var email = $("#SubscribeEmail").val();
+  var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+
+  if(!email_regex.test(email_address.val())){
+      $("#SubscribeMsg").html("Invalid Email");
+  }
+  $("#SubscribeMsg").show();
+};
+
 $(document).ready(function(){
     if($(window).width() > 960){
 

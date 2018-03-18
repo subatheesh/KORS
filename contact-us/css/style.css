@@ -172,7 +172,6 @@ a:hover{
 input, textarea{
   padding: 5px 15px;
   font-size: 12px;
-  text-transform: uppercase;
   border: 0px solid #ca353c;
   margin: 6px;
   background: #ca353c;
@@ -181,6 +180,7 @@ input, textarea{
   color: #fff;
   font-family: "GothamLight";
 }
+input{text-transform: uppercase;}
 textarea{border-radius: 8px / 20px; height: 100px;}
 input:focus,
 select:focus,
